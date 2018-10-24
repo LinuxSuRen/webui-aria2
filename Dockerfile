@@ -35,5 +35,8 @@ EXPOSE 6800/tcp
 # webui static content web server, map wherever is convenient
 EXPOSE 8080/tcp
 
+# download service port
+EXPOSE 8089/tcp
+
 CMD ["start"]
 ENTRYPOINT ["/usr/local/bin/goreman"]
